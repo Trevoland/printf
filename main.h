@@ -2,5 +2,4 @@
 #define MAIN_H
 
 int _printf(const char *format, ...);
-
-#endif
+int (*get_print(char s))(va_list,flags_t *);
