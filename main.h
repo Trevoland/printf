@@ -75,4 +75,3 @@ int print_percent(va_list l, flags_t *f);
 
 
 #endif
-#endif
