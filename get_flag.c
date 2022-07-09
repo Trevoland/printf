@@ -7,7 +7,7 @@
  * @f: pointer the struct flags
  * Return: 1 if flag is truned on or 0 if otherwise
  */
-int get_flag(char s, flag_t *f)
+int get_flag(char s, flags_t *f)
 {
 	int n;
 
