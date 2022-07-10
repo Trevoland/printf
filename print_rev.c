@@ -3,7 +3,9 @@
 
 /**
  * print_rev - function that prints string in reverse
- * @args: type struct va_arg where is allocated printf arguments
+ * @l: argument from _printf
+ * @f: pointer to the struct flags that determines
+ * if a flag is passed to _printf
  * Return: string
  */
 int print_rev(va_list l, flags_t *f)
