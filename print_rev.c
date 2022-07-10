@@ -6,18 +6,19 @@
  * @args: type struct va_arg where is allocated printf arguments
  * Return: string
  */
-int print_rev(va_list args)
+int print_rev(va_list l, flags_t *f)
 {
-	char *str = va_arg(args, char*);
+	char *str = va_arg(l, char*);
 	int i;
 	int j;
 
-	if ( s == NULL)
+	(void)f;
+	if ( str == NULL)
 	{
 		return (NULL);
 	}
-	for (j = 0; s[j] != '\0'; j++)
+	for (j = 0; str[j] != '\0'; j++)
 		for (i = j - 1; i >= 0; i--)
-			_putchar(s[i]);
+			_putchar(str[i]);
 	return (j);
 }
