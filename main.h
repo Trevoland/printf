@@ -5,14 +5,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int _putchar(char c);
-int _printf(const char *format, ...);
-int print_char(va_list c);
-int print_string(va_list s);
-int print_int(va_list i);
-int print_dec(va_list d);
-int print_rev(va_list l, flags_t *f);
-
 /**
  * struct flags - struct containing flags to "turn on"
  * when a flag specifier is passed to _printf()
@@ -22,10 +14,18 @@ int print_rev(va_list l, flags_t *f);
  */
 typedef struct flags
 {
-	int plus;
-	int space;
-	int hash;
+        int plus;
+        int space;
+        int hash;
 } flags_t;
+
+int _putchar(char c);
+int _printf(const char *format, ...);
+int print_char(va_list c);
+int print_string(va_list s);
+int print_int(va_list i);
+int print_dec(va_list d);
+int print_rev(va_list l, flags_t *f);
 
 /**
   * struct code_format - Struct format
